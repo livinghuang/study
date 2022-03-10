@@ -1,20 +1,19 @@
-# Git 使用分支
+# Git 合併分支
 
 ## 知識
 
-* git branch [name]
+* git merge
+* git branch -d [name]
 
 ## 網站
 
-<https://youtu.be/ZDtWf_JNZf8>
+<https://youtu.be/iAEPvL9IxDA>
 
 ## 實戰
 
 ```bash
-git branch branchtest 
-git branch  
-git checkout branchtest
-git add .
-git commit "git branchtest first commit test "
+git checkout master
+git merge branchtest
 git log --oneline
+git branch
 ```
