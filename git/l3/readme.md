@@ -1,4 +1,4 @@
-# Git 初始設定
+# Day 1: Git 初始設定
 
 ## 知識
 
@@ -28,3 +28,7 @@ git config -l
 git config --help
 git help config
 ```
+
+## 教學來源
+
+<https://www.youtube.com/channel/UCazV3A3_1-Mtd6E_auw_ifg>

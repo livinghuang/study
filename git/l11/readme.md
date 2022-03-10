@@ -1,4 +1,4 @@
-# Git 返回過去
+# Day 9: Git 返回過去
 
 ## 知識
 
@@ -17,3 +17,7 @@ git reset --hard HEAD
 git reflog
 git reset --hard 7383c6b
 ```
+
+## 教學來源
+
+<https://www.youtube.com/channel/UCazV3A3_1-Mtd6E_auw_ifg>

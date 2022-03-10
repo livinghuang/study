@@ -1,4 +1,4 @@
-# Git 使用分支
+# Day 10: Git 使用分支
 
 ## 知識
 
@@ -18,3 +18,7 @@ git add .
 git commit "git branchtest first commit test "
 git log --oneline
 ```
+
+## 教學來源
+
+<https://www.youtube.com/channel/UCazV3A3_1-Mtd6E_auw_ifg>

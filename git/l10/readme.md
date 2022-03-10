@@ -1,4 +1,4 @@
-# Git 更新最後的提交
+# Day 8: Git 更新最後的提交
 
 ## 知識
 
@@ -21,3 +21,6 @@ git status
 git log
 ```
 
+## 教學來源
+
+<https://www.youtube.com/channel/UCazV3A3_1-Mtd6E_auw_ifg>

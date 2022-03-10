@@ -1,15 +1,12 @@
-# Day 6: Git 文件操作
+# Day 12: Git 分支衝突
 
 ## 知識
 
-* git add .
+* git 分支衝突
 
-## 實戰
+## 網站
 
-```bash
-#添加文件 
-git add .
-```
+<https://youtu.be/wlUtKDuHN6I>
 
 ## 教學來源
 

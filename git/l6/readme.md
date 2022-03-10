@@ -1,4 +1,4 @@
-# 把握 Git 狀態
+# Day 4: 把握 Git 狀態
 
 ## 知識
 
@@ -17,3 +17,7 @@ git status
 git restore --staged <file>
 git checkout -- <file>
 ```
+
+## 教學來源
+
+<https://www.youtube.com/channel/UCazV3A3_1-Mtd6E_auw_ifg>

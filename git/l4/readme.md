@@ -1,4 +1,4 @@
-# 提交 Commit
+# Day 2: 提交 Commit
 
 ## 知識
 
@@ -25,3 +25,7 @@ git commit -m "first commit"
 #查看提交歷史
 git log
 ```
+
+## 教學來源
+
+<https://www.youtube.com/channel/UCazV3A3_1-Mtd6E_auw_ifg>

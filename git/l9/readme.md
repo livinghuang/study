@@ -1,4 +1,4 @@
-# Git 忽略管理
+# Day 7: Git 忽略管理
 
 ## 知識
 
@@ -25,3 +25,7 @@ git status
 git add .
 git commit -m "git ignore test"
 ```
+
+## 教學來源
+
+<https://www.youtube.com/channel/UCazV3A3_1-Mtd6E_auw_ifg>
