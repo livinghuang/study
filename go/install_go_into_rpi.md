@@ -19,9 +19,10 @@
 mkdir ~/src && cd ~/src
 # 下載最新版的軟體
 wget https://go.dev/dl/go1.17.8.linux-armv6l.tar.gz
-wget https://go.dev/dl/go1.16.15.linux-arm64.tar.gz
+wget https://go.dev/dl/go1.17.8.linux-arm64.tar.gz
 # 解壓縮
 sudo tar -C /usr/local -xzf go1.17.8.linux-armv6l.tar.gz
+sudo tar -C /usr/local -xzf go1.17.8.linux-arm64.tar.gz
 # 清除安裝檔
 rm go1.17.8.linux-armv6l.tar.gz
 

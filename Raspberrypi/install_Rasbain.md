@@ -13,6 +13,7 @@
 * 安裝後基礎設定
 
 ```bash
+# 第一次登錄的帳號密碼為 username:pi,password:raspberry
 # 進入設定, 至少修改以下項目
 # 設定Wi-Fi
 # 設定時區
