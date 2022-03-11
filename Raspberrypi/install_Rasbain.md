@@ -5,9 +5,9 @@
 * 安裝各版本的作業系統
 
 ```text
- RPi4 64bit ARM no desktop
- RPi3 64bit ARM no desktop
- Rpi0 32bit ARM lite no desktop
+ RPi4 使用 64bit ARM no desktop
+ RPi3 使用 64bit ARM no desktop
+ Rpi0 使用 32bit ARM lite no desktop
 ```
 
 * 安裝後基礎設定
@@ -27,8 +27,8 @@ sudo apt-get upgrade
 
 
 ## 網站
-<https://www.raspberrypi.com/software/>
-<https://www.raspberrypi.com/software/operating-systems/>
+* <https://www.raspberrypi.com/software/>
+* <https://www.raspberrypi.com/software/operating-systems/>
 
 ## Reference
 
