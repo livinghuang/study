@@ -25,7 +25,6 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
-
 ## 網站
 * <https://www.raspberrypi.com/software/>
 * <https://www.raspberrypi.com/software/operating-systems/>
@@ -46,4 +45,3 @@ ssh-keygen -R 192.168.2.151
 ```
 
 來源 <https://ithelp.ithome.com.tw/articles/10083004>
-

@@ -4,7 +4,6 @@
 
 * 安裝在 raspberry pi 4B+
 * 安裝在 raspberry pi 0
-* ARMv6 Arch for RPi4 , RPi0
 * Linux 遠端文件傳輸指令 SCP
 
 ## 網站
@@ -13,23 +12,29 @@
 
 ## 實戰
 
-下載最新版的Go軟體並安裝
+下載最新版的Go軟體並安裝(RPi 4)
 
 ```bash
-mkdir ~/src && cd ~/src
-# 下載最新版的軟體
-wget https://go.dev/dl/go1.17.8.linux-armv6l.tar.gz
-wget https://go.dev/dl/go1.17.8.linux-arm64.tar.gz
-# 解壓縮
-sudo tar -C /usr/local -xzf go1.17.8.linux-armv6l.tar.gz
-sudo tar -C /usr/local -xzf go1.17.8.linux-arm64.tar.gz
-# 清除安裝檔
-rm go1.17.8.linux-armv6l.tar.gz
+# 下載最新版的Go軟體並安裝(RPi 4)
+sudo apt-get install golang
+# 設定go路徑
+nano ~/.profile
+```
 
-export GOPATH=$HOME/goexport PATH=$PATH:/usr/local/go/bin
+```text
+export GOROOT=/usr/lib/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+```
+
+更新 profile
+
+```bash
+source ~/.profile
 ```
 
 RPi4 編譯測試 Hello world
+
 ```bash
 # mkdir -p $GOPATH/src/github.com/user
 mkdir -p $GOPATH/src/github.com/livinghuang/hello
@@ -48,7 +53,17 @@ func main() {
 ```
 
 ```bash
+go run hello.go
+# 然後就成功了 Hello, world.
+```
+
+將他安裝到系統上，讓他在各地都可以執行
+
+```bash
 go install github.com/livinghuang/hello
+cd ~
+hello
+# 然後又成功了 Hello, world.
 ```
 
 將Rpi4編譯bin檔傳送到Rpi0執行
@@ -57,27 +72,14 @@ go install github.com/livinghuang/hello
 #(在 RPI4 上)
 # 從本地端複製到遠端
 # scp /path/file1 myuser@192.168.0.1:/path/file2
-scp ~/go/helo pi@192.168.1.101:~/go/helo
+scp ~/go/hello pi@192.168.1.101:~/go/hello
 ```
 
 ```bash
 #(在 RPI0 上)
-./helo
+./hello
 ```
 
 ## 參考
-<https://www.jeremymorgan.com/tutorials/raspberry-pi/install-go-raspberry-pi/>
-<https://openhome.cc/Gossip/Go/HelloWorld.html>
 
-## 問題排解
-
-```bash
-cd /var/lib/dpkg/
-sudo mv info/ info_bak # 現將info資料夾更名
-sudo mkdir info # 再新建一個新的info資料夾
-sudo apt-get update # 更新
-sudo apt-get -f install # 修復
-sudo mv info/* info_bak/ # 執行完上一步操作後會在新的info資料夾下生成一些檔案，現將這些檔案全部移到info_bak資料夾下
-sudo rm -rf info # 把自己新建的info資料夾刪掉
-sudo mv info_bak info # 把以前的info資料夾重新改回
-```
+<https://zh-tw.coderbridge.com/@Jemmy1234/59d6b40fb69a4461b40ae72a030c509a>
